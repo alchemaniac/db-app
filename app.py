@@ -6,9 +6,9 @@ app = Flask(__name__)
 @app.route('/',methods=['GET','POST'])
 def index():
 	mydb = mysql.connector.connect(
-	host="egress-service",
+	host="egress-2",
   	user="super",
-	password="mysql12345"
+	password="postgres12345"
 	)
 
 	mycursor = mydb.cursor()
